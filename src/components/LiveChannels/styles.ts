@@ -29,6 +29,8 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     fontWeight: 'bold',
+    marginLeft: 5,
+    
   },
   subtitle: {
     fontSize: 14,
@@ -70,15 +72,19 @@ export const styles = StyleSheet.create({
   },
   userImageContainer: {
     marginRight: 10,
-   
     justifyContent: 'flex-start',
-
   },
   userImage: {
-    width: 25,
-    height: 25,
+    width: 20,
+    height: 20,
     borderRadius: 15,
+    marginTop: 2,
   },
+  box: {
+    flex: 1,
+    flexDirection: 'row',
+    
+  }
 });
 
 export default styles;

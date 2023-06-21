@@ -94,10 +94,10 @@ const LiveChannels = () => {
         <View style={styles.userImageContainer}>
         <View style={styles.text}>
         </View>
-          <Text 
-          style={styles.title}>{item.title}
-          <Image source={item.userImage} style={styles.userImage} />
-          </Text>
+        <View style={styles.box}>
+        <Image source={item.userImage} style={styles.userImage} />
+          <Text style={styles.title}>{item.title}</Text>
+          </View>
           <Text style={styles.subtitle}>{item.subtitle}</Text>
           <Text style={styles.game}>{item.game}</Text>
           {item.tags && item.tags.length > 0 && (
