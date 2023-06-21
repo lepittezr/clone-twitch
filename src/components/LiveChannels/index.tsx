@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, ScrollView, Text, FlatList, Image } from 'react-native';
 import { styles } from './styles';
+import { MaterialIcons } from '@expo/vector-icons';
 
 import live1 from '../../images/Lives/live1.png';
 import live2 from '../../images/Lives/live2.png';
@@ -17,7 +18,8 @@ const LiveChannels = () => {
       title: 'Bawkbasoup',
       subtitle: 'WE DO IT TODAY || Hardest',
       game: 'Resident Evil 2',
-      tags: ['GodGamer', 'GamerGod']
+      tags: ['GodGamer', 'GamerGod'],
+      iconText: '2.4K',
     },
     {
       id: '2',
@@ -25,7 +27,9 @@ const LiveChannels = () => {
       title: 'Orchlon',
       subtitle: 'Must PB Before Dead Space',
       game: 'Resident Evil 2',
-      tags: ['Speedrun', 'Bajej']
+      tags: ['Speedrun', 'Bajej'],
+      iconText: '479',
+
     },
     {
       id: '3',
@@ -34,6 +38,8 @@ const LiveChannels = () => {
       subtitle: '[No Damage] (0/12 Done)',
       game: 'Outlast',
       tags: ['English', 'NoHit', 'NoDamege'],
+      iconText: '190',
+
     },
     {
       id: '4',
@@ -41,7 +47,8 @@ const LiveChannels = () => {
       title: 'Alanzoka',
       subtitle: 'Gameplay Fortnite 20/03',
       game: 'Fortnite',
-      tags: ['Games']
+      tags: ['Games'],
+      iconText: '22.4K',
     },
     {
       id: '5',
@@ -49,7 +56,8 @@ const LiveChannels = () => {
       title: 'NoobCBL',
       subtitle: 'Em busca do level 200!',
       game: 'CABAL Online',
-      tags: ['Gameplays', 'Up']
+      tags: ['Gameplays', 'Up'],
+      iconText: '1.3K',
     },
     {
       id: '6',
@@ -57,28 +65,33 @@ const LiveChannels = () => {
       title: 'CabalZOR',
       subtitle: 'Farmando em TROPA',
       game: 'CABAL Online',
-      tags: ['Farm', 'farmando', 'Cabal', 'COBR']
+      tags: ['Farm', 'farmando', 'Cabal', 'COBR'],
+      iconText: '486',
     },
   ];
 
   const renderItem = ({ item }) => (
-<View style={styles.item}>
-    <Image source={item.image} style={styles.image} />
-    <View style={styles.text}>
-      <Text style={styles.title}>{item.title}</Text>
-      <Text style={styles.subtitle}>{item.subtitle}</Text>
-      <Text style={styles.game}>{item.game}</Text>
-      {item.tags && item.tags.length > 0 && (
-        <View style={styles.tagContainer}>
-          {item.tags.map((tag, index) => (
-            <Text key={index} style={styles.tag}>
-              {tag}
-            </Text>
-          ))}
-        </View>
-      )}
+    <View style={styles.item}>
+      <Image source={item.image} style={styles.image} />
+      <View style={styles.iconContainer}>
+      <View style={styles.iconCircle} />
+      <Text style={styles.iconText}>{item.iconText}</Text>
     </View>
-  </View>
+      <View style={styles.text}>
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.subtitle}>{item.subtitle}</Text>
+        <Text style={styles.game}>{item.game}</Text>
+        {item.tags && item.tags.length > 0 && (
+          <View style={styles.tagContainer}>
+            {item.tags.map((tag, index) => (
+              <Text key={index} style={styles.tag}>
+                {tag}
+              </Text>
+            ))}
+          </View>
+        )}
+      </View>
+    </View>
   );
 
   return (

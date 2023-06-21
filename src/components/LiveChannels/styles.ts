@@ -19,12 +19,13 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 10,
   },
-  image: {
-    width: 140,
-    height: 80,
-    marginRight: 10,
-    marginBottom: 10,
-  },
+image: {
+  width: 140,
+  height: 80,
+  marginRight: 10,
+  marginBottom: 10,
+  position: 'relative',
+},
   title: {
     fontSize: 16,
     fontWeight: 'bold',
@@ -46,6 +47,25 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     marginRight: 5,
     marginTop: 5,
+    fontSize: 10,
+  },
+  iconContainer: {
+    position: 'absolute',
+    bottom: 5,
+    left: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 13,
+  },
+  iconCircle: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: 'red',
+    marginRight: 4,
+  },
+  iconText: {
+    color: 'white',
     fontSize: 10,
   },
 });
