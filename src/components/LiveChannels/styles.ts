@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     width: 140,
     height: 80,
     marginRight: 10,
-    marginBottom: 10,
+    marginBottom: 7,
     position: 'relative',
   },
   title: {
@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 8,
     borderRadius: 10,
     marginRight: 5,
-    marginTop: 5,
+    marginTop: 4,
     fontSize: 10,
   },
   iconContainer: {
@@ -83,6 +83,7 @@ export const styles = StyleSheet.create({
   box: {
     flex: 1,
     flexDirection: 'row',
+    marginBottom: 2,
     
   }
 });
