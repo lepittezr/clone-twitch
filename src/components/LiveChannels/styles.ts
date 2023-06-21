@@ -19,13 +19,13 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderRadius: 10,
   },
-image: {
-  width: 140,
-  height: 80,
-  marginRight: 10,
-  marginBottom: 10,
-  position: 'relative',
-},
+  image: {
+    width: 140,
+    height: 80,
+    marginRight: 10,
+    marginBottom: 10,
+    position: 'relative',
+  },
   title: {
     fontSize: 16,
     fontWeight: 'bold',
@@ -68,7 +68,17 @@ image: {
     color: 'white',
     fontSize: 10,
   },
-});
+  userImageContainer: {
+    marginRight: 10,
+   
+    justifyContent: 'flex-start',
 
+  },
+  userImage: {
+    width: 25,
+    height: 25,
+    borderRadius: 15,
+  },
+});
 
 export default styles;
