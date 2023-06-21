@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     position: 'relative',
   },
   title: {
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 'bold',
     marginLeft: 5,
     
